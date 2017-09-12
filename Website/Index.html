@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<style>
+	body{
+		background-color: aliceblue
+	}
+		
+	</style>
+<style>
+	.divheading{ 
+		background: #E91212;
+	}
+	</style>
+<style>
+	.divheading2{ 
+		background: #E3E821;
+	}
+	</style>
+<meta charset="utf-8">
+<title>Home Page</title>
+</head>
+<body>
+<div class="divheading">
+ <p><img align="left" src="../images/KASLOGO.jpg" width="100px" height="100px"/></p>
+ <p><img align="right" src="../images/KASLOGO.jpg" width="100px" height="100px"/></p>
+  <h1><center>Koonibba Aboriginal School</center></h1>
+  </div>
+<div class="divheading2">
+<h2><center> RESPECT-CO-OPERATION-EXCELLENCE</center></h2>
+	</div>
+<div>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: centerb ;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+	
+	.nav{ 
+		text-align:center;
+		}
+	
+	.nav li{
+		display:inline;
+	}
+	
+	.nav a{
+		display:inline-block;
+		padding:10px;
+	}
+</style>
+
+<ul>
+	<li><a href="Index.html"><h4>HOME</h4></a></li>
+<li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn"><h4>SCHOOL INFORMATION</h4></a>
+	<div class="dropdown-content">
+		<a href="Lesson Times.html">Lesson Times</a>
+		<a href="#">Principals Welcome</a>
+		<a href="#">New Enrolment Pack</a>
+		<a href="#">Location</a>
+		<a href="#">Term Dates</a>
+		</div>
+	</li>
+<li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn"><h4>CURRENT NEWS</h4></a>
+	<div class="dropdown-content">
+		<a href="../Newsletters/1st August.pdf"><h4>Current Newsletter</h4></a>
+		<a href="#">Calendar</a>
+		<a href="#">Archived Newsletters</a>
+		</div>
+	</li>
+<li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn"><h4>PUBLICATIONS & POLICIES</h4></a>
+	<div class="dropdown-content">
+		<a href="#">Annual Report</a>
+		<a href="#">Context Statement</a>
+		<a href="#">External School Review</a>
+		<a href="#">Feedback & Complaints</a>
+		<a href="#">Bullying & Harrassment Policy</a>
+		</div>
+	</li>
+<li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn"><h4>CURRICULUM</h4></a>
+	<div class="dropdown-content">
+		<a href="#">English</a>
+		<a href="#">Mathematics</a>
+		<a href="#">Science</a>
+		<a href="#">Humanities & Social Science</a>
+		<a href="#">The Arts</a>
+		</div>
+	</li>
+<li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn"><h4>LINKS</h4></a>
+	<div class="dropdown-content">
+		<a href="#">Classroom BLOGS</a>
+		<a href="#">Students</a>
+		<a href="#">Parents</a>
+		</div>
+	</li>
+<li class="dropdown">
+	<a href="javascript:void(0)" class="dropbtn"><h4>PHOTO GALLERIES</h4></a>
+	<div class="dropdown-content">
+		<a href="#">Junior Primary</a>
+		<a href="#">Middle Primary</a>
+		<a href="#">Upper Primary</a>
+		<a href="#">Brighton High Visit</a>
+		<a href="#">Nature Play Opening</a>
+		<a href="#">Aquatics</a>
+		</div>
+	</li>
+	<li><a href="#home"><h4>CONTACT</h4></a></li>
+</ul>
+</div>
+<div>
+	<p><center><h1>HOME PAGE</h1></center></p>
+</div>
+<div>
+	<p><center><h3>Welcome to our school!</h3></center></p>
+	</div>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="w3-content w3-section" style="max-width:550px""max-height:1000px">
+  <img class="mySlides" src="../images/Aquatics.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Art.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Bushday.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Sports Day 2016 041.jpg" style="width:100%">
+  <img class="mySlides" src="../images/KASLOGO.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 6 seconds
+}
+</script>
+
+</body>
+</html>
