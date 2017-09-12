@@ -9,16 +9,16 @@
 	</style>
 <style>
 	.divheading{ 
-		background: #C82426;
+		background: #E91212;
 	}
 	</style>
 <style>
 	.divheading2{ 
-		background: #E3DC1F;
+		background: #E3E821;
 	}
 	</style>
 <meta charset="utf-8">
-<title>Lesson Times</title>
+<title>Home Page</title>
 </head>
 <body>
 <div class="divheading">
@@ -81,12 +81,25 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+	
+	.nav{ 
+		text-align:center;
+		}
+	
+	.nav li{
+		display:inline;
+	}
+	
+	.nav a{
+		display:inline-block;
+		padding:10px;
+	}
 </style>
 
 <ul>
-<li><a href="index.html">HOME</a></li>
+	<li><a href="index.html"><h4>HOME</h4></a></li>
 <li class="dropdown">
-	<a href="javascript:void(0)" class="dropbtn">SCHOOL INFORMATION</a>
+	<a href="javascript:void(0)" class="dropbtn"><h4>SCHOOL INFORMATION</h4></a>
 	<div class="dropdown-content">
 		<a href="Lesson Times.html">Lesson Times</a>
 		<a href="#">Principals Welcome</a>
@@ -96,15 +109,15 @@ li.dropdown {
 		</div>
 	</li>
 <li class="dropdown">
-	<a href="javascript:void(0)" class="dropbtn"> CURRENT NEWS</a>
+	<a href="javascript:void(0)" class="dropbtn"><h4>CURRENT NEWS</h4></a>
 	<div class="dropdown-content">
-		<a href="#">Current Newsletter</a>
+		<a href="../Newsletters/1st August.pdf"><h4>Current Newsletter</h4></a>
 		<a href="#">Calendar</a>
 		<a href="#">Archived Newsletters</a>
 		</div>
 	</li>
 <li class="dropdown">
-	<a href="javascript:void(0)" class="dropbtn">PUBLICATIONS & POLICIES</a>
+	<a href="javascript:void(0)" class="dropbtn"><h4>PUBLICATIONS & POLICIES</h4></a>
 	<div class="dropdown-content">
 		<a href="#">Annual Report</a>
 		<a href="#">Context Statement</a>
@@ -114,7 +127,7 @@ li.dropdown {
 		</div>
 	</li>
 <li class="dropdown">
-	<a href="javascript:void(0)" class="dropbtn">CURRICULUM</a>
+	<a href="javascript:void(0)" class="dropbtn"><h4>CURRICULUM</h4></a>
 	<div class="dropdown-content">
 		<a href="#">English</a>
 		<a href="#">Mathematics</a>
@@ -124,7 +137,7 @@ li.dropdown {
 		</div>
 	</li>
 <li class="dropdown">
-	<a href="javascript:void(0)" class="dropbtn">LINKS</a>
+	<a href="javascript:void(0)" class="dropbtn"><h4>LINKS</h4></a>
 	<div class="dropdown-content">
 		<a href="#">Classroom BLOGS</a>
 		<a href="#">Students</a>
@@ -132,7 +145,7 @@ li.dropdown {
 		</div>
 	</li>
 <li class="dropdown">
-	<a href="javascript:void(0)" class="dropbtn">PHOTO GALLERY</a>
+	<a href="javascript:void(0)" class="dropbtn"><h4>PHOTO GALLERIES</h4></a>
 	<div class="dropdown-content">
 		<a href="#">Junior Primary</a>
 		<a href="#">Middle Primary</a>
@@ -142,22 +155,49 @@ li.dropdown {
 		<a href="#">Aquatics</a>
 		</div>
 	</li>
-	<li><a href="#home">CONTACT</a></li>
+	<li><a href="#home"><h4>CONTACT</h4></a></li>
 </ul>
 </div>
 <div>
-	<p><center><h1>Lesson Times</h1></center></p>
+	<p><center><h1>HOME PAGE</h1></center></p>
 </div>
-	<div> 
-	<p> 8:30 - First Bell</p>
-	<p>8:50 - Class Time</P>
-	<p>11:00 - Recess
-		  11:20 - End of recess - fruit time.
-		  11:30 - Class Time.
-		  1:00 - Lunch Time
-		  1:30 - Class Time.
-		  3:00 - Home Time</p></div>
+<div>
+	<p><center><h3>Welcome to our school!</h3></center></p>
+	</div>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
 
+<div class="w3-content w3-section" style="max-width:550px""max-height:1000px">
+  <img class="mySlides" src="../images/Aquatics.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Art.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Bushday.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Sports Day 2016 041.jpg" style="width:100%">
+  <img class="mySlides" src="../images/KASLOGO.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 6 seconds
+}
+</script>
 
 </body>
 </html>
